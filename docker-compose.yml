@@ -1,0 +1,22 @@
+db:
+  image: onjin/alpine-postgres:9.5
+  ports:
+    - "5433:5432"
+  environment:
+    POSTGRES_USER: root
+web:
+  build: .
+  volumes:
+    - .:/fred4321
+  working_dir: /fred4321
+  environment:
+    DB: postgresql
+    DB_USERNAME: root
+    DB_PASSWORD:
+  command: >
+    bash -c 'script/wait-for-tcp $FRED4321_DB_1_PORT_5432_TCP_ADDR $FRED4321_DB_1_PORT_5432_TCP_PORT &&
+             rails s'
+  ports:
+    - "9292:9292"
+  links:
+    - db
