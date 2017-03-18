@@ -1,0 +1,435 @@
+---
+ru:
+  thredded:
+    content_moderation_states:
+      content_blocked_notice: Блокировано
+      content_blocked_notice_with_record_html: Blocked by %{moderator} %{time_ago}
+    email_notifier:
+      by_email: по почте
+    errors:
+      login_required: Необходимо зайти на форум.
+      not_authorized: Вы не авторизованы.
+      private_topic_create_denied: Вы не авторизованы для создания личных сообщений.
+      private_topic_not_found: Личное сообщение не найдено.
+    form:
+      create_btn_submitting: Создаю...
+      update: Обновить
+      update_btn_submitting: Обновляю...
+      preview: Обзор
+    messageboard:
+      create: Создать форум
+      form:
+        create_btn_submitting: :thredded.form.create_btn_submitting
+        no_group: Не группировать
+        update_btn_submitting: :thredded.form.update_btn_submitting
+      index:
+        page_title: Форумы
+      last_updated_by_html: Updated %{time_ago} <cite>by %{user}</cite>
+      topics_and_posts_counts: "%{topics_count} topics / %{posts_count} posts"
+      update: :thredded.form.update
+      updated_notice: Форум обновлен
+    messageboard_group:
+      create: Создать группу форумов
+      form:
+        create_btn_submitting: :thredded.form.create_btn_submitting
+      saved: Группа форумов %{name} создана
+    moderation:
+      approve_btn: Approve
+      block_btn: Block
+      pending:
+        empty:
+          content: All posts have been moderated.
+          title: Good job!
+      post_approved_html: Post approved by %{moderator} %{time_ago}.
+      post_blocked_html: Post blocked by %{moderator} %{time_ago}.
+      post_deleted_notice: This post has been deleted.
+      posts_content_changed_since_moderation_html: >-
+        The <a href="%{post_url}">post's</a> content change since it was moderated. Below is the content at the
+        time it was moderated.
+      search_users:
+        form_label: Поиск пользователей
+        form_placeholder: :thredded.moderation.search_users.form_label
+        no_results_message: No users with name starting with %{query}
+        results_message: Users with names starting with %{query}
+    nav:
+      all_messageboards: All Messageboards
+      edit_messageboard: Edit Messageboard
+      edit_post: Редактировать пост
+      edit_private_topic: :thredded.nav.edit_topic
+      edit_topic: Редактировать
+      mark_all_read: Mark All As Read
+      moderation: Модерация
+      moderation_activity: Активность
+      moderation_history: История
+      moderation_pending: В ожидании
+      moderation_users: Пользователи
+      private_topics: Личное
+      settings: Уведомления
+    null_user_name: Пользователь удален
+    posts:
+      delete: Delete Post
+      delete_confirm: Are you sure you want to delete this post?
+      deleted_notice: Your post has been deleted.
+      edit: :thredded.nav.edit_post
+      form:
+        content_label: Контент
+        create_btn: Submit Reply
+        create_btn_submitting: Posting...
+        update_btn: Обновить пост
+        update_btn_submitting: :thredded.form.update_btn_submitting
+      pending_moderation_notice: Your post will be published when it has been reviewed by a moderator.
+    preferences:
+      edit:
+        page_title: :thredded.nav.settings
+      form:
+        follow_topics_on_mention:
+          hint: 'When someone mentions you by your username (eg: @sam) you will follow the topic.'
+          label: Follow topics you are mentioned in
+        global_preferences_label: Global Settings
+        messageboard_follow_topics_on_mention:
+          hint: 'When someone mentions you by your username (eg: @sam) in this messageboard you will follow the
+            topic.'
+          label: :thredded.preferences.form.follow_topics_on_mention.label
+        messageboard_notifications_for_followed_topics:
+          label: :thredded.preferences.form.notifications_for_followed_topics.label
+        messageboard_preferences_label_html: Notification Settings for <em>%{messageboard}</em>
+        notifications_for_followed_topics:
+          label: Notifications for followed topics
+        notifications_for_private_topics:
+          label: Notifications for private messages
+        submit_btn: Update Settings
+        title: Settings
+        update_btn_submitting: :thredded.form.update_btn_submitting
+      updated_notice: Your settings have been updated.
+    private_posts:
+      form:
+        content_label: Message
+        create_btn: Send Message
+        create_btn_submitting: Sending...
+        update_btn_submitting: :thredded.form.update_btn_submitting
+    private_topics:
+      edit: Edit
+      errors:
+        user_ids_length: Please specify at least one other user.
+      form:
+        content_label: :thredded.private_posts.form.content_label
+        create_btn: :thredded.private_posts.form.create_btn
+        create_btn_submitting: :thredded.private_posts.form.create_btn_submitting
+        title_label: :thredded.topics.form.title_label
+        title_placeholder_new: Write the subject of this conversation
+        title_placeholder_start: Start a new conversation
+        update_btn: Update
+        update_btn_submitting: :thredded.private_posts.form.update_btn_submitting
+        users_label: Participants
+        users_placeholder: Select users to participate in this conversation
+      no_private_topics:
+        create_btn: Start your first private conversation
+        title: You have no private messages.
+      updated_notice: Title updated
+    recent_activity: Recent activity
+    search:
+      form:
+        btn_submit: :thredded.search.form.label
+        label: Поиск
+        placeholder: Поиск тем или записей
+    time_ago: "%{time} назад"
+    topics:
+      delete_confirm: Are you sure you want to delete this topic? This CANNOT be undone.
+      delete_topic: Delete Topic
+      deleted_notice: Topic deleted
+      edit: Edit Topic
+      follow: Follow this topic
+      followed_by: 'Followed by:'
+      followed_by_noone: No one is following this topic
+      followed_notice: You are now following this topic
+      following:
+        manual: You are following this topic.
+        mentioned: You are following this topic because you were mentioned on it.
+        posted: You are following this topic because you posted to it.
+      form:
+        categories_placeholder: Categories
+        content_label: :thredded.posts.form.content_label
+        create_btn: Создать новую тему
+        messageboard_label: Форум
+        title_label: Заголовок
+        title_placeholder: :thredded.topics.form.title_label
+        title_placeholder_start: Начать новую тему
+      currently_online: Онлайн
+      last_active_html: Last active %{time_ago}
+      posted_in_topic_html: Posted in %{topic_link}
+      posts_count:
+        one: Posted once
+        other: Posted %{count} times
+      recent_activity: :thredded.recent_activity
+      started_topic_html: Started %{topic_link}
+      started_topics_count:
+        one: Started one topic
+        other: Started %{count} topics
+      user_posted_in_topic_html: "%{user_link} posted in %{topic_link}"
+      user_since_html: User since %{time_ago}
+      user_started_topic_html: "%{user_link} started %{topic_link}"
+  activerecord:
+    errors:
+      messages:
+        record_invalid: 'Возникли ошибки: %{errors}'
+        restrict_dependent_destroy:
+          has_one: 'Невозможно удалить запись, так как существует зависимость: %{record}'
+          has_many: 'Невозможно удалить запись, так как существуют зависимости: %{record}'
+  date:
+    abbr_day_names:
+    - Вс
+    - Пн
+    - Вт
+    - Ср
+    - Чт
+    - Пт
+    - Сб
+    abbr_month_names:
+    -
+    - янв.
+    - февр.
+    - марта
+    - апр.
+    - мая
+    - июня
+    - июля
+    - авг.
+    - сент.
+    - окт.
+    - нояб.
+    - дек.
+    day_names:
+    - воскресенье
+    - понедельник
+    - вторник
+    - среда
+    - четверг
+    - пятница
+    - суббота
+    formats:
+      default: "%d.%m.%Y"
+      long: "%-d %B %Y"
+      short: "%-d %b"
+    month_names:
+    -
+    - января
+    - февраля
+    - марта
+    - апреля
+    - мая
+    - июня
+    - июля
+    - августа
+    - сентября
+    - октября
+    - ноября
+    - декабря
+    order:
+    - :day
+    - :month
+    - :year
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        few: около %{count} часов
+        many: около %{count} часов
+        one: около %{count} часа
+        other: около %{count} часа
+      about_x_months:
+        few: около %{count} месяцев
+        many: около %{count} месяцев
+        one: около %{count} месяца
+        other: около %{count} месяца
+      about_x_years:
+        few: около %{count} лет
+        many: около %{count} лет
+        one: около %{count} года
+        other: около %{count} лет
+      almost_x_years:
+        one: почти 1 год
+        few: почти %{count} года
+        many: почти %{count} лет
+        other: почти %{count} лет
+      half_a_minute: меньше минуты
+      less_than_x_minutes:
+        few: меньше %{count} минут
+        many: меньше %{count} минут
+        one: меньше %{count} минуты
+        other: меньше %{count} минуты
+      less_than_x_seconds:
+        few: меньше %{count} секунд
+        many: меньше %{count} секунд
+        one: меньше %{count} секунды
+        other: меньше %{count} секунды
+      over_x_years:
+        few: больше %{count} лет
+        many: больше %{count} лет
+        one: больше %{count} года
+        other: больше %{count} лет
+      x_days:
+        few: "%{count} дня"
+        many: "%{count} дней"
+        one: "%{count} день"
+        other: "%{count} дня"
+      x_minutes:
+        few: "%{count} минуты"
+        many: "%{count} минут"
+        one: "%{count} минуту"
+        other: "%{count} минуты"
+      x_months:
+        few: "%{count} месяца"
+        many: "%{count} месяцев"
+        one: "%{count} месяц"
+        other: "%{count} месяца"
+      x_years:
+        few: "%{count} года"
+        many: "%{count} лет"
+        one: "%{count} год"
+        other: "%{count} года"
+      x_seconds:
+        few: "%{count} секунды"
+        many: "%{count} секунд"
+        one: "%{count} секунду"
+        other: "%{count} секунды"
+    prompts:
+      day: День
+      hour: Часов
+      minute: Минут
+      month: Месяц
+      second: Секунд
+      year: Год
+  errors:
+    format: "%{attribute} %{message}"
+    messages:
+      accepted: нужно подтвердить
+      blank: не может быть пустым
+      present: нужно оставить пустым
+      confirmation: не совпадает со значением поля %{attribute}
+      empty: не может быть пустым
+      equal_to: может иметь лишь значение, равное %{count}
+      even: может иметь лишь нечетное значение
+      exclusion: имеет зарезервированное значение
+      greater_than: может иметь значение большее %{count}
+      greater_than_or_equal_to: может иметь значение большее или равное %{count}
+      inclusion: имеет непредусмотренное значение
+      invalid: имеет неверное значение
+      less_than: может иметь значение меньшее чем %{count}
+      less_than_or_equal_to: может иметь значение меньшее или равное %{count}
+      model_invalid: 'Возникли ошибки: %{errors}'
+      not_a_number: не является числом
+      not_an_integer: не является целым числом
+      odd: может иметь лишь четное значение
+      required: не может отсутствовать
+      taken: уже существует
+      too_long:
+        few: слишком большой длины (не может быть больше чем %{count} символа)
+        many: слишком большой длины (не может быть больше чем %{count} символов)
+        one: слишком большой длины (не может быть больше чем %{count} символ)
+        other: слишком большой длины (не может быть больше чем %{count} символа)
+      too_short:
+        few: недостаточной длины (не может быть меньше %{count} символов)
+        many: недостаточной длины (не может быть меньше %{count} символов)
+        one: недостаточной длины (не может быть меньше %{count} символа)
+        other: недостаточной длины (не может быть меньше %{count} символа)
+      wrong_length:
+        few: неверной длины (может быть длиной ровно %{count} символа)
+        many: неверной длины (может быть длиной ровно %{count} символов)
+        one: неверной длины (может быть длиной ровно %{count} символ)
+        other: неверной длины (может быть длиной ровно %{count} символа)
+      other_than: должно отличаться от %{count}
+    template:
+      body: 'Проблемы возникли со следующими полями:'
+      header:
+        few: "%{model}: сохранение не удалось из-за %{count} ошибок"
+        many: "%{model}: сохранение не удалось из-за %{count} ошибок"
+        one: "%{model}: сохранение не удалось из-за %{count} ошибки"
+        other: "%{model}: сохранение не удалось из-за %{count} ошибки"
+  helpers:
+    select:
+      prompt: 'Выберите: '
+    submit:
+      create: Создать %{model}
+      submit: Сохранить %{model}
+      update: Сохранить %{model}
+  number:
+    currency:
+      format:
+        delimiter: " "
+        format: "%n %u"
+        precision: 2
+        separator: ","
+        significant: false
+        strip_insignificant_zeros: false
+        unit: руб.
+    format:
+      delimiter: " "
+      precision: 3
+      separator: ","
+      significant: false
+      strip_insignificant_zeros: false
+    human:
+      decimal_units:
+        format: "%n %u"
+        units:
+          billion:
+            few: миллиардов
+            many: миллиардов
+            one: миллиард
+            other: миллиардов
+          million:
+            few: миллионов
+            many: миллионов
+            one: миллион
+            other: миллионов
+          quadrillion:
+            few: квадриллионов
+            many: квадриллионов
+            one: квадриллион
+            other: квадриллионов
+          thousand:
+            few: тысяч
+            many: тысяч
+            one: тысяча
+            other: тысяч
+          trillion:
+            few: триллионов
+            many: триллионов
+            one: триллион
+            other: триллионов
+          unit: ''
+      format:
+        delimiter: ''
+        precision: 1
+        significant: false
+        strip_insignificant_zeros: false
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            few: байта
+            many: байт
+            one: байт
+            other: байта
+          gb: ГБ
+          kb: КБ
+          mb: МБ
+          tb: ТБ
+    percentage:
+      format:
+        delimiter: ''
+        format: "%n%"
+    precision:
+      format:
+        delimiter: ''
+  support:
+    array:
+      last_word_connector: " и "
+      two_words_connector: " и "
+      words_connector: ", "
+  time:
+    am: утра
+    formats:
+      default: "%a, %d %b %Y, %H:%M:%S %z"
+      long: "%d %B %Y, %H:%M"
+      short: "%d %b, %H:%M"
+    pm: вечера
