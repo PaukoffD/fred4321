@@ -11,6 +11,7 @@
 // about supported directives.
 //
 //= require jquery3
+//= require rails-timeago-all
 //= require locales/jquery.timeago.ru
 //= require jquery_ujs
 //= require turbolinks
