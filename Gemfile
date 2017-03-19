@@ -64,3 +64,6 @@ gem 'dalli'
 gem 'connection_pool'
 gem 'friendly_id'
 gem 'babosa'
+gem 'ckeditor'
+gem 'paperclip'
+
