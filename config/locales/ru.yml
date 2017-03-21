@@ -5,7 +5,7 @@ ru:
       content_blocked_notice: Блокировано
       content_blocked_notice_with_record_html: Блокировано %{moderator} %{time_ago}
     email_notifier:
-      by_email: по почте
+      by_email: email
     errors:
       login_required: Необходимо зайти на форум.
       not_authorized: Вы не авторизованы.
@@ -22,6 +22,9 @@ ru:
         create_btn_submitting: :thredded.form.create_btn_submitting
         no_group: Не группировать
         update_btn_submitting: :thredded.form.update_btn_submitting
+        title_label: Название форума
+        description_label: Описание
+        messageboard_group_id_label: Выбрать группу
       index:
         page_title: Форумы
       last_updated_by_html: Обновлено %{time_ago} <cite>пользователем %{user}</cite>
@@ -42,7 +45,7 @@ ru:
           title: Хорошая работа!
       post_approved_html: Пост одобрен %{moderator} %{time_ago}.
       post_blocked_html: Пост заблокирован %{moderator} %{time_ago}.
-      post_deleted_notice: Этот пост удален.
+      post_deleted_notice: Этот пост "удален".
       posts_content_changed_since_moderation_html: >-
         <a href="%{post_url}">пост</a> был изменен с даты последней модерации. Ниже - контент на момент модерации.
       search_users:
@@ -64,14 +67,15 @@ ru:
       moderation_users: Пользователи
       private_topics: Личное
       settings: Уведомления
-    null_user_name: Пользователь удален
+    null_user_name: Пользователь "удален"
     posts:
       delete: Удалить пост
       delete_confirm: Вы уверены что хотите удалить пост?
-      deleted_notice: Пост был удален.
+      deleted_notice: Пост был "удален".
       edit: :thredded.nav.edit_post
       form:
         content_label: Контент
+        title_label: Добавить пост
         create_btn: Ответить
         create_btn_submitting: Постинг...
         update_btn: Обновить пост
@@ -134,7 +138,7 @@ ru:
     topics:
       delete_confirm: Вы уверены что хотите удалить эту тему? Это безвозвратно.
       delete_topic: Удалить тему
-      deleted_notice: Тема удалена
+      deleted_notice: Тема "удалена"
       edit: Редактировать тему
       follow: Наблюдать за темой
       followed_by: 'Наблюдаю'
@@ -171,7 +175,7 @@ ru:
       mark_as_unread: Пометить как непрочитанное
       not_following: не отслеживаю
       locked:
-        label: Блокировать
+        label: Заблокировать тему
       sticky:
         label: Закрепить
     users:
