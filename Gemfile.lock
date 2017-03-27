@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/red56/thredded-workgroup.git
+  revision: 56727a9a05415dec871eeab3baf3cb68a2cb2b98
+  specs:
+    thredded-workgroup (0.1.0)
+      thredded (>= 0.10.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -339,6 +346,7 @@ DEPENDENCIES
   spring
   spring-watcher-listen (~> 2.0.0)
   thredded
+  thredded-workgroup!
   turbolinks (~> 5)
   tzinfo-data
   uglifier (>= 1.3.0)
