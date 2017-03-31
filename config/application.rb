@@ -25,6 +25,8 @@ module Fred4321
 
     config.i18n.default_locale = :ru
     config.autoload_paths += Dir[ Rails.root.join('app', 'models', "commands") ]
-
+    config.assets.precompile += Ckeditor.assets
+    config.assets.precompile += %w( ckeditor/* )
+    config.autoload_paths += %W(#{config.root}/app/models/ckeditor)
   end
 end
