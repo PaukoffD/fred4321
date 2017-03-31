@@ -1,0 +1,52 @@
+.thredded--topic-source cite a {
+  color: #a5aab6;
+  text-decoration: none;
+  &:hover {
+    color: #4a90e2;
+
+  }
+}
+
+cite.thredded--messageboard-name {
+  color: #a5aab6;
+  font-size: 0.875rem;
+  font-style: normal;
+  white-space: nowrap;
+}
+
+.thredded--topic-post-and-last-user {
+  max-width: 35rem;
+  margin: auto;
+  margin-top: 1rem;
+
+  &.thredded--condensed {
+    max-height: 100px;
+    overflow: hidden;
+    opacity: 0.8;
+    &.thredded--hovering {
+      opacity: 1;
+    }
+  }
+  &.thredded--hovering {
+    cursor: pointer;
+  }
+}
+
+.thredded--topics--topic .thredded--topics--follow-icon {
+  &:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    color: #4a90e2;
+  }
+}
+
+.thredded--topics--topic.thredded--rollover{
+  cursor: pointer;
+
+  .thredded--topic-title a {
+    color: #4a90e2;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,6 @@
+.thredded--preferences-header {
+  &--title {
+    @extend %thredded--heading;
+    font-size: 1.5rem; // 24px
+  }
+}
