@@ -64,7 +64,7 @@ gem 'dalli'
 gem 'connection_pool'
 gem 'friendly_id'
 gem 'babosa'
-gem 'ckeditor'
+gem 'ckeditor', github: 'galetahub/ckeditor'
 gem 'paperclip'
 gem 'thredded-workgroup', github: 'red56/thredded-workgroup'
 
