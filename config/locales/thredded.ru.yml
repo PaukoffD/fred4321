@@ -8,13 +8,14 @@ ru:
     workgroup:
       unread:
         link: Непрочитанные
-        title: Заголовок
+        title: Непрочитанные
       messageboards:
         link: Форумы
       all_topics:
         link: Все топики
       awaiting_reply:
         link: Ожидающие ответа
+        condensed-link: Ответы
       following:
         link: Наблюдаемые
   brand:

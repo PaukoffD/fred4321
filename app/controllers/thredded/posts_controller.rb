@@ -31,7 +31,7 @@ module Thredded
     def generate_flash_for(post)
       path_to_post = messageboard_topic_path(parent_topic.messageboard, parent_topic, anchor: "post_#{post.id}")
       # rubocop:disable Rails/OutputSafety
-      "Successfully replied to #{view_context.link_to(parent_topic.title, path_to_post)}".html_safe
+      "Успешный ответ на #{view_context.link_to(parent_topic.title, path_to_post)}".html_safe
       # rubocop:enable Rails/OutputSafety
     end
   end
