@@ -55,15 +55,20 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'rspec-rails', groups: %i(test)
 gem 'capybara', groups: %i(test)
+gem 'config'
 gem 'simple_form'
 gem 'devise'
 gem 'devise-i18n'
+gem 'rails_email_preview'
+gem 'roadie-rails'
+gem 'plain-david'
 gem 'thredded'
 gem 'rails-timeago'
 gem 'dalli'
 gem 'connection_pool'
 gem 'friendly_id'
 gem 'babosa'
-gem 'ckeditor'
+gem 'ckeditor', github: 'galetahub/ckeditor'
 gem 'paperclip'
+#gem 'thredded-workgroup', github: 'red56/thredded-workgroup'
 

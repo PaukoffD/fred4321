@@ -46,14 +46,6 @@ class CreateThredded < ActiveRecord::Migration
       t.index [:slug], name: :index_thredded_messageboards_on_slug
     end
 
-    create_table :thredded_post_notifications do |t|
-      t.string :email, limit: 191, null: false
-      t.references :post, null: false
-      t.timestamps null: false
-      t.string :post_type, limit: 191
-      t.index [:post_id, :post_type], name: :index_thredded_post_notifications_on_post
-    end
-
     create_table :thredded_posts do |t|
       t.integer :user_id, limit: 4
       t.text :content, limit: 65_535
@@ -162,6 +154,7 @@ class CreateThredded < ActiveRecord::Migration
     create_table :thredded_user_preferences do |t|
       t.references :user, null: false
       t.boolean :follow_topics_on_mention, default: true, null: false
+      t.boolean :auto_follow_topics, default: false, null: false
       t.timestamps null: false
       t.index [:user_id], name: :index_thredded_user_preferences_on_user_id
     end
@@ -170,6 +163,7 @@ class CreateThredded < ActiveRecord::Migration
       t.references :user, null: false
       t.references :messageboard, null: false
       t.boolean :follow_topics_on_mention, default: true, null: false
+      t.boolean :auto_follow_topics, default: false, null: false
       t.timestamps null: false
       t.index [:user_id, :messageboard_id],
               name: :thredded_user_messageboard_preferences_user_id_messageboard_id,

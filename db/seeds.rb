@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 admin = User.create!(
     display_name: 'Admin',
-    email: "admin@fred4321.com",
+    email: "admin@fred654.com",
     password: "123456",
     admin: true
 )

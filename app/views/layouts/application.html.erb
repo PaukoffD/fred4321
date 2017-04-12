@@ -7,7 +7,8 @@
                          rel: 'apple-touch-icon', type: 'image/png' %>
     <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag current_theme, media: 'all', 'data-turbolinks-track': 'reload' %>
+
     <%= javascript_include_tag 'application',
                                 async: !Rails.application.config.assets.debug,
                                 defer: true,
@@ -34,5 +35,89 @@
   </script>
 <% end %>
 </body>
+  <footer class="footer">
+
+    <ul class="nav navbar-nav navbar-left">
+
+      <div class="panel-footer nav navbar-nav navbar-right">
+        <!-- Yandex.Metrika informer -->
+        <a href="https://metrika.yandex.ru/stat/?id=34478010&amp;from=informer"
+           target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/34478010/3_1_FFFFFFFF_EFEFEFFF_0_pageviews"
+                                               style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" onclick="try{Ya.Metrika.informer({i:this,id:34478010,lang:'ru'});return false}catch(e){}" /></a>
+        <!-- /Yandex.Metrika informer -->
+
+        <!-- Yandex.Metrika counter -->
+        <script src="https://mc.yandex.ru/metrika/watch.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            try {
+                var yaCounter34478010 = new Ya.Metrika({
+                    id:34478010,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        </script>
+        <noscript><div><img src="https://mc.yandex.ru/watch/34478010" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+        <!-- /Yandex.Metrika counter -->
+
+        <!-- HotLog -->
+        <span id="hotlog_counter"></span>
+        <span id="hotlog_dyn"></span>
+        <script type="text/javascript">
+            var hot_s = document.createElement('script'); hot_s.type = 'text/javascript'; hot_s.async = true;
+            hot_s.src = 'http://js.hotlog.ru/dcounter/2514721.js';
+            hot_d = document.getElementById('hotlog_dyn');
+            hot_d.appendChild(hot_s);
+        </script>
+
+
+        <!-- /HotLog -->
+
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            ga('create', 'UA-71817556-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+
+        <!-- Rating@Mail.ru counter -->
+        <script type="text/javascript">
+            var _tmr = window._tmr || (window._tmr = []);
+            _tmr.push({id: "2727588", type: "pageView", start: (new Date()).getTime()});
+            (function (d, w, id) {
+                if (d.getElementById(id)) return;
+                var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;
+                ts.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//top-fwz1.mail.ru/js/code.js";
+                var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};
+                if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
+            })(document, window, "topmailru-code");
+        </script><noscript><div style="position:absolute;left:-10000px;">
+        <img src="//top-fwz1.mail.ru/counter?id=2727588;js=na" style="border:0;" height="1" width="1" alt="Рейтинг@Mail.ru" />
+      </div></noscript>
+        <!-- //Rating@Mail.ru counter -->
+        <!-- Rating@Mail.ru logo -->
+        <a href="http://top.mail.ru/jump?from=2727588">
+          <img src="//top-fwz1.mail.ru/counter?id=2727588;t=479;l=1"
+               style="border:0;" height="31" width="88" alt="Рейтинг@Mail.ru" /></a>
+        <!-- //Rating@Mail.ru logo -->
+
+        <!-- begin of Top100 code -->
+
+        <script id="top100Counter" type="text/javascript" src="http://counter.rambler.ru/top100.jcn?4396740"></script>
+        <noscript>
+          <a href="http://top100.rambler.ru/navi/4396740/">
+            <img src="http://counter.rambler.ru/top100.cnt?4396740" alt="Rambler's Top100" border="0" />
+          </a>
+
+        </noscript>
+        <!-- end of Top100 code -->
+
+
+      </div>
+    </ul>
+  </footer>
 
 </html>

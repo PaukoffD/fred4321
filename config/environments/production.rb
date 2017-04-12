@@ -54,7 +54,7 @@ Rails.application.configure do
 
   # Use a real queuing backend for Active Job (and separate queues per environment)
   # config.active_job.queue_adapter     = :resque
-  # config.active_job.queue_name_prefix = "fred4321_#{Rails.env}"
+  # config.active_job.queue_name_prefix = "fred654_#{Rails.env}"
   config.action_mailer.perform_caching = false
 
   # Ignore bad email addresses and do not raise email delivery errors.
@@ -82,13 +82,20 @@ Rails.application.configure do
   end
 
   # Do not dump schema after migrations.
-  config.active_record.dump_schema_after_migration = false
+  config.active_record.dump_schema_after_migration = false  
+  # Set the default URL options for both Roadie and ActionMailer:
+  config.roadie.url_options = config.action_mailer.default_url_options = {
+    host: 'paukoff.ru',
+    protocol: 'smtp',
+  }
+  config.action_mailer.asset_host = nil
+
 
   # Configure memcached as the cache store
   if ENV['MEMCACHE_SERVERS']
     config.cache_store = :dalli_store,
         ENV['MEMCACHE_SERVERS'].split(','), {
-            namespace: 'fred4321',
+            namespace: 'fred654',
             socket_timeout: 1.5,
             socket_failure_delay: 0.2,
             down_retry_delay: 60,
