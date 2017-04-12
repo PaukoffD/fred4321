@@ -64,14 +64,26 @@ Thredded.messageboards_order = :position
 
 # ==> Email Configuration
 # Email "From:" field will use the following
-# Thredded.email_from = 'no-reply@example.com'
+Thredded.email_from = %("#{I18n.t('brand.name')}" <#{Settings.email_sender}>)
 
 # Emails going out will prefix the "Subject:" with the following string
-# Thredded.email_outgoing_prefix = '[My Forum] '
+ Thredded.email_outgoing_prefix = '[Клуб любителей чая] '
+#
+# The parent mailer for all Thredded mailers
+Thredded.parent_mailer = 'ApplicationMailer'
 
 # ==> View Configuration
 # Set the layout for rendering the thredded views.
 Thredded.layout = 'application'
+
+# ==> URLs
+# How Thredded generates URL slugs from text.
+
+# Default:
+# Thredded.slugifier = ->(input) { input.parameterize }
+
+# If your forum is in a language other than English, you might want to use the babosa gem instead
+ Thredded.slugifier = ->(input) { Babosa::Identifier.new(input).normalize.transliterate(:russian).to_s }
 
 # ==> Post Content Formatting
 # Customize the way Thredded handles post formatting.
@@ -136,7 +148,7 @@ Thredded.layout = 'application'
 # Change how users can choose to be notified, by adding notifiers here, or removing the initializer altogether
 #
 # default:
-# Thredded.notifiers = [Thredded::EmailNotifier.new]
+Thredded.notifiers = [Thredded::EmailNotifier.new]
 #
 # none:
 # Thredded.notifiers = []
@@ -144,6 +156,7 @@ Thredded.layout = 'application'
 # add in (must install separate gem (under development) as well):
 # Thredded.notifiers = [Thredded::EmailNotifier.new, Thredded::PushoverNotifier.new(ENV['PUSHOVER_APP_ID'])]
 # frozen_string_literal: true
+
 Rails.application.config.to_prepare do
   Thredded::ApplicationController.module_eval do
     rescue_from Thredded::Errors::LoginRequired do |exception|

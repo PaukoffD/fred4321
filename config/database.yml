@@ -5,11 +5,11 @@ defaults: &defaults
 
 development:
   <<: *defaults
-  database: fred4321_development
+  database: fred654_dev
 
 test:
   <<: *defaults
-  database: fred4321_test
+  database: fred654_test
 
 
 production:

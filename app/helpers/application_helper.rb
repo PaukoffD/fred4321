@@ -1,4 +1,6 @@
 module ApplicationHelper
+  include ThemesHelper
+  
   def page_title
     safe_join [content_for(:page_title) || content_for(:thredded_page_title),
                t('brand.name')].compact, ' - '
